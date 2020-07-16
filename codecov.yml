@@ -1,7 +1,7 @@
 coverage:
   status:
     default_rules:
-      carryforward_behavior: include
+      carryforward_behavior: pass
     project:
       default:
         target: auto
