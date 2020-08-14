@@ -1,7 +1,7 @@
 coverage:
   status:
     default_rules:
-      report_not_uploaded_behavior: pass
+      flag_coverage_not_uploaded_behavior: pass
     project:
       default:
         target: auto
@@ -11,7 +11,7 @@ coverage:
           - demo
       index:
         target: auto
-        report_not_uploaded_behavior: exclude
+        flag_coverage_not_uploaded_behavior: exclude
         flags:
           - index
       missing:
