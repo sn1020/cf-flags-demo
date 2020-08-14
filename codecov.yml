@@ -1,7 +1,7 @@
 coverage:
   status:
     default_rules:
-      carryforward_behavior: include
+      report_not_uploaded_behavior: pass
     project:
       default:
         target: auto
@@ -11,8 +11,12 @@ coverage:
           - demo
       index:
         target: auto
+        report_not_uploaded_behavior: exclude
         flags:
           - index
+      missing:
+        flags:
+          - missing
 comment:
   layout: "reach, diff, flags, files"
   behavior: default
@@ -31,3 +35,5 @@ flags:
     paths:
       - src/index/index.py
     carryforward: true
+  missing:
+    carryforward: false
